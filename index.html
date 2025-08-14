@@ -12,7 +12,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Header / Navbar -->
+
+  <div id="triangleBg" class="triangle-bg" aria-hidden="true"></div>
+
   <header>
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
       <div class="container">
@@ -25,392 +27,98 @@
         </button>
         <div class="collapse navbar-collapse" id="nav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="#temario">Temario</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/index.html">Introduccion a JavaScript</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/dos.html">Sintaxis básica</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/tres.html">Tipos de datos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/cuatro.html">Variables</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/cinco.html">Operadores</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/seis.html">Condicionales</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/siete.html">Bucles</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/ocho.html">Funciones</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
 
-  <!-- Hero -->
   <section id="inicio" class="hero py-5">
     <div class="container">
       <div class="row align-items-center g-4">
         <div class="col-lg-7">
           <h1 class="display-5 fw-bold">Enciclopedia Web Básica de <span class="text-primary">JavaScript</span></h1>
-          <div class="d-flex gap-2">
-            <a href="#temario" class="btn btn-primary btn-lg">Explorar Temas</a>
-          </div>
         </div>
       </div>
     </div>
   </section>
 
   <main>
-    <!-- Índice -->
-    <section id="temario" class="py-5 bg-white">
-      <div class="container">
-        <div class="d-flex justify-content-between align-items-end mb-3">
-          <h2 class="mb-0">Temario de la Enciclopedia</h2>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t1"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">01</span><h5>Introducción a JavaScript</h5><p class="mb-0">Historia, dónde corre y para qué sirve.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t2"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">02</span><h5>Sintaxis básica</h5><p class="mb-0">Comentarios, mayúsculas, punto y coma.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t3"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">03</span><h5>Tipos de datos</h5><p class="mb-0">string, number, boolean, null, undefined, symbol, bigint.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t4"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">04</span><h5>Variables y constantes</h5><p class="mb-0">Uso de <code>var</code>, <code>let</code> y <code>const</code>.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t5"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">05</span><h5>Operadores</h5><p class="mb-0">Aritméticos, lógicos y comparación.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t6"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">06</span><h5>Condicionales</h5><p class="mb-0"><code>if/else</code> y <code>switch</code>.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t7"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">07</span><h5>Bucles</h5><p class="mb-0"><code>for</code>, <code>while</code>, <code>do...while</code>.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t8"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">08</span><h5>Funciones</h5><p class="mb-0">Declaradas, expresadas y flecha.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t9"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">09</span><h5>Arrays</h5><p class="mb-0">Métodos comunes.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t10"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">10</span><h5>Objetos</h5><p class="mb-0">Propiedades y acceso.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t11"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">11</span><h5>Manipulación del DOM</h5><p class="mb-0">Seleccionar y modificar.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t12"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">12</span><h5>Eventos</h5><p class="mb-0"><code>onclick</code>, <code>addEventListener</code>.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t13"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">13</span><h5>JSON</h5><p class="mb-0">Formato e intercambio.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t14"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">14</span><h5>localStorage / sessionStorage</h5><p class="mb-0">Persistencia básica.</p></div></div></a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="toc-link" href="#t15"><div class="card shadow-soft h-100"><div class="card-body"><span class="badge badge-topic mb-2">15</span><h5>Buenas prácticas</h5><p class="mb-0">Estilo y comentarios.</p></div></div></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contenido de Temas -->
     <section class="py-5">
       <div class="container">
 
-        <!-- Helper: Bloque de ejemplo interactivo reutilizable -->
-        <div class="callout mb-4">
-          <strong>Tip:</strong> En cada tema encontrarás ejemplos de código envueltos en <code>&lt;pre&gt;&lt;code&gt;</code> (como pediste) y algunos incluyen un botón «Probar» para ver el resultado directamente en la página.
+        <div class="card border-0 shadow-soft mb-5" style="border-radius:1.25rem;">
+          <div class="card-body p-4 p-lg-5">
+            <h1 class="fw-bold mb-4 text-primary">Introducción a JavaScript</h1>
+            <p class="fs-5">
+              JavaScript es un lenguaje de programación creado en 1995 por <strong>Brendan Eich</strong> mientras trabajaba en Netscape Communications. 
+              Nació con el objetivo de dotar de interactividad y dinamismo a las páginas web, en una época en la que Internet comenzaba a expandirse rápidamente.
+            </p>
+
+            <h3 class="fw-bold mb-4 display-5">1. Origen e Historia</h3>
+            <p class="fs-5">
+              Inicialmente llamado <em>Mocha</em> y luego <em>LiveScript</em>, fue finalmente bautizado como JavaScript por motivos de marketing, 
+              aprovechando la popularidad del lenguaje Java en ese momento. Aunque comparten nombre, Java y JavaScript son lenguajes diferentes.
+            </p>
+            <p class="fs-5">
+              Su primera aparición fue en el navegador Netscape Navigator 2.0. Con el tiempo, otros navegadores comenzaron a implementar 
+              versiones propias, lo que llevó a problemas de compatibilidad.
+            </p>
+
+            <h3 class="fw-bold mb-4 display-5">2. Estandarización (ECMAScript)</h3>
+            <p class="fs-5">
+              Para resolver los problemas de compatibilidad, en 1997 JavaScript fue estandarizado bajo el nombre de <strong>ECMAScript</strong> 
+              por la organización ECMA International. Desde entonces, se han publicado múltiples versiones que han añadido nuevas características, 
+              como funciones flecha, clases, módulos y promesas.
+            </p>
+
+            <h3 class="fw-bold mb-4 display-5">3. Relevancia Actual</h3>
+            <p class="fs-5">
+              Hoy en día, JavaScript no solo se ejecuta en navegadores, sino también en servidores (gracias a <strong>Node.js</strong>) y en aplicaciones móviles y de escritorio.  
+              Es uno de los tres pilares del desarrollo web, junto con HTML y CSS.
+            </p>
+
+            <blockquote class="blockquote border-start border-4 border-primary ps-3 my-4">
+              <p class="mb-0 fst-italic">"JavaScript es el lenguaje que convirtió la web en un entorno interactivo y dinámico, y sigue evolucionando para adaptarse al futuro."</p>
+            </blockquote>
+
+            <h3 class="fw-bold mb-4 display-5">4. Ejemplos de Uso</h3>
+            <ul class="fs-5">
+              <li>Interactividad en páginas web (formularios dinámicos, animaciones, validaciones).</li>
+              <li>Aplicaciones web completas (usando frameworks como React, Angular o Vue).</li>
+              <li>Desarrollo de servidores y APIs con Node.js.</li>
+              <li>Aplicaciones móviles y de escritorio multiplataforma.</li>
+            </ul>
+
+            <p class="fs-5">
+              Gracias a su versatilidad, enorme comunidad y constante evolución, JavaScript continúa siendo una de las habilidades más demandadas 
+              para desarrolladores en todo el mundo.
+            </p>
+          </div>
         </div>
-
-        <!-- T1 Introducción -->
-        <article id="t1" class="mb-5">
-          <h3>1) Introducción a JavaScript y su historia</h3>
-          <p>JavaScript nació en 1995 (Brendan Eich) para dotar de interactividad a las páginas web. Hoy se ejecuta en navegadores, servidores (Node.js) y muchos otros entornos. Es el lenguaje estándar de la web junto con HTML y CSS.</p>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="intro-code">Copiar</button>
-            <pre><code id="intro-code" class="language-js">// JS vive en el navegador
-console.log("Hola desde la consola del navegador");
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T2 Sintaxis -->
-        <article id="t2" class="mb-5">
-          <h3>2) Sintaxis básica</h3>
-          <ul>
-            <li>Comentarios: <code>// una línea</code> y <code>/* varias líneas */</code></li>
-            <li>Case-sensitive: <code>variable</code> ≠ <code>Variable</code></li>
-            <li>El punto y coma es opcional, pero recomendado en proyectos grandes.</li>
-          </ul>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="sintaxis-code">Copiar</button>
-            <pre><code id="sintaxis-code" class="language-js">// Comentario de una línea
-/* Comentario
-   de varias líneas */
-let nombre = "Ana"; // sensible a mayúsculas
-console.log(nombre);
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T3 Tipos -->
-        <article id="t3" class="mb-5">
-          <h3>3) Tipos de datos primitivos</h3>
-          <p>Primitivos: <code>string</code>, <code>number</code>, <code>boolean</code>, <code>null</code>, <code>undefined</code>, <code>symbol</code>, <code>bigint</code>.</p>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <div class="example">
-                <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="tipos-code">Copiar</button>
-                <pre><code id="tipos-code" class="language-js">const texto = "Hola";      // string
-const edad = 17;            // number
-const activo = true;        // boolean
-const nada = null;          // null
-let sinDefinir;             // undefined
-const id = Symbol("id");   // symbol
-const grande = 9007199254740993n; // bigint
-console.log(typeof grande); // "bigint"
-                </code></pre>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h6 class="fw-bold">Nota</h6>
-                  <p class="mb-0">Usa <code>typeof</code> para inspeccionar tipos. Recuerda: <code>typeof null === "object"</code> (quirk histórico).</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- T4 Variables -->
-        <article id="t4" class="mb-5">
-          <h3>4) Variables y constantes</h3>
-          <p><code>let</code> (mutable, alcance de bloque), <code>const</code> (constante de referencia), <code>var</code> (alcance de función, evitar en código moderno).</p>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="variables-code">Copiar</button>
-            <pre><code id="variables-code" class="language-js">let contador = 0; // mutable
-const PI = 3.1416; // constante
-var legado = "evitar"; // var: hoisting y alcance de función
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T5 Operadores -->
-        <article id="t5" class="mb-5">
-          <h3>5) Operadores</h3>
-          <ul>
-            <li>Aritméticos: <code>+ - * / % **</code></li>
-            <li>Comparación: <code>==</code> (coerción) vs <code>===</code> (estricto)</li>
-            <li>Lógicos: <code>&&</code>, <code>||</code>, <code>!</code>, y nullish <code>??</code></li>
-          </ul>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="operadores-code">Copiar</button>
-            <pre><code id="operadores-code" class="language-js">console.log(2 ** 3);     // 8
-console.log(5 == "5");  // true (coerción)
-console.log(5 === "5"); // false (estricto)
-const nombre = null ?? "Anónimo"; // "Anónimo"
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T6 Condicionales -->
-        <article id="t6" class="mb-5">
-          <h3>6) Condicionales</h3>
-          <div class="example">
-            <div class="d-flex gap-2 mb-2">
-              <button class="btn btn-sm btn-primary" data-run="cond-run">Probar</button>
-              <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="cond-code">Copiar</button>
-            </div>
-            <pre><code id="cond-code" class="language-js">const hora = new Date().getHours();
-let saludo;
-if (hora &lt; 12) saludo = "Buenos días";
-else if (hora &lt; 18) saludo = "Buenas tardes";
-else saludo = "Buenas noches";
-console.log(saludo);
-
-const dia = 3;
-switch (dia) {
-  case 1: console.log("Lunes"); break;
-  case 2: console.log("Martes"); break;
-  case 3: console.log("Miércoles"); break;
-  default: console.log("Otro día");
-}
-            </code></pre>
-            <div id="cond-run" class="mt-2 small text-muted">(El resultado aparecerá en la consola del navegador)</div>
-          </div>
-        </article>
-
-        <!-- T7 Bucles -->
-        <article id="t7" class="mb-5">
-          <h3>7) Bucles</h3>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="bucles-code">Copiar</button>
-            <pre><code id="bucles-code" class="language-js">for (let i = 0; i &lt; 3; i++) console.log(i);
-let j = 0; while (j &lt; 3) { console.log(j); j++; }
-let k = 0; do { console.log(k); k++; } while (k &lt; 3);
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T8 Funciones -->
-        <article id="t8" class="mb-5">
-          <h3>8) Funciones</h3>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="funciones-code">Copiar</button>
-            <pre><code id="funciones-code" class="language-js">function suma(a, b){ return a + b; }          // declarada
-const resta = function(a, b){ return a - b; }; // expresada
-const doble = x => x * 2;                      // flecha
-console.log(suma(2,3), resta(5,2), doble(4));
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T9 Arrays -->
-        <article id="t9" class="mb-5">
-          <h3>9) Arrays y métodos comunes</h3>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="arrays-code">Copiar</button>
-            <pre><code id="arrays-code" class="language-js">const numeros = [1,2,3,4];
-const pares = numeros.filter(n => n % 2 === 0);
-const dobles = numeros.map(n => n * 2);
-const total = numeros.reduce((acc, n) => acc + n, 0);
-console.log({ pares, dobles, total });
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T10 Objetos -->
-        <article id="t10" class="mb-5">
-          <h3>10) Objetos</h3>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="objetos-code">Copiar</button>
-            <pre><code id="objetos-code" class="language-js">const persona = { nombre: "Ana", edad: 17 };
-console.log(persona.nombre);
-persona.email = "ana@mail.com"; // añadir propiedad
-const { nombre, edad } = persona; // destructuring
-console.log(nombre, edad);
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T11 DOM -->
-        <article id="t11" class="mb-5">
-          <h3>11) Manipulación del DOM</h3>
-          <div class="row g-3">
-            <div class="col-lg-7">
-              <div class="example">
-                <div class="d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-primary" data-run="dom-run">Probar</button>
-                  <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="dom-code">Copiar</button>
-                </div>
-                <pre><code id="dom-code" class="language-js">const titulo = document.getElementById("demo-titulo");
-titulo.innerHTML = "Título cambiado con &lt;em&gt;JS&lt;/em&gt;";
-const caja = document.querySelector("#demo-caja");
-caja.style.border = "2px solid #00b894";
-                </code></pre>
-                <div id="dom-run" class="mt-2 small text-muted">(Interactúa con el bloque de la derecha)</div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="p-3 bg-white rounded shadow-soft">
-                <h6 id="demo-titulo" class="mb-2">Demo DOM</h6>
-                <div id="demo-caja" class="p-3" style="background:#f1f5f9; border-radius:.5rem">Caja editable por JS</div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- T12 Eventos -->
-        <article id="t12" class="mb-5">
-          <h3>12) Eventos</h3>
-          <div class="row g-3">
-            <div class="col-lg-7">
-              <div class="example">
-                <div class="d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-primary" data-run="ev-run">Probar</button>
-                  <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="eventos-code">Copiar</button>
-                </div>
-                <pre><code id="eventos-code" class="language-js">const btn = document.querySelector("#btn-click");
-btn.onclick = () => alert("click clásico");
-btn.addEventListener("mouseover", () => btn.textContent = "¡Hola!");
-btn.addEventListener("mouseout", () => btn.textContent = "Pásame el cursor");
-                </code></pre>
-                <div id="ev-run" class="mt-2 small text-muted">(Prueba el botón de la derecha)</div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <button id="btn-click" class="btn btn-outline-primary w-100 py-3">Pásame el cursor</button>
-            </div>
-          </div>
-        </article>
-
-        <!-- T13 JSON -->
-        <article id="t13" class="mb-5">
-          <h3>13) Introducción a JSON</h3>
-          <p>JSON es un formato de texto para intercambio de datos. Usa pares clave-valor y se parece a los objetos de JS.</p>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="json-code">Copiar</button>
-            <pre><code id="json-code" class="language-js">const alumno = { nombre: "Ana", grado: "Diversificado" };
-const json = JSON.stringify(alumno); // a texto JSON
-const obj = JSON.parse(json);        // a objeto JS
-console.log(json, obj.nombre);
-            </code></pre>
-          </div>
-        </article>
-
-        <!-- T14 Storage -->
-        <article id="t14" class="mb-5">
-          <h3>14) Uso básico de <code>localStorage</code> y <code>sessionStorage</code></h3>
-          <div class="row g-3">
-            <div class="col-lg-7">
-              <div class="example">
-                <div class="d-flex gap-2 mb-2">
-                  <button class="btn btn-sm btn-primary" data-run="store-run">Probar</button>
-                  <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="store-code">Copiar</button>
-                </div>
-                <pre><code id="store-code" class="language-js">// Guardar y leer en localStorage
-localStorage.setItem("tema", "oscuro");
-const tema = localStorage.getItem("tema");
-console.log(tema);
-
-// sessionStorage (dura hasta cerrar pestaña)
-sessionStorage.setItem("sesion", "activa");
-                </code></pre>
-                <div id="store-run" class="mt-2 small text-muted">(Abre la consola del navegador para ver los valores)</div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h6 class="fw-bold">Consejo</h6>
-                  <p class="mb-0">Convierte objetos a JSON antes de guardarlos: <code>localStorage.setItem("clave", JSON.stringify(obj))</code>.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- T15 Buenas prácticas -->
-        <article id="t15" class="mb-4">
-          <h3>15) Buenas prácticas y comentarios</h3>
-          <ul>
-            <li>Prefiere <code>const</code> y <code>let</code> sobre <code>var</code>.</li>
-            <li>Nombres descriptivos: <code>calcularPromedio()</code>, no <code>cp()</code>.</li>
-            <li>Evita código duplicado; usa funciones reutilizables.</li>
-            <li>Comenta el <em>por qué</em>, no lo obvio.</li>
-            <li>Formatea el código (Prettier, ESLint).</li>
-          </ul>
-          <div class="example">
-            <button class="btn btn-sm btn-outline-secondary copy-btn" data-copy="bp-code">Copiar</button>
-            <pre><code id="bp-code" class="language-js">/**
- * Calcula el promedio de un arreglo de números.
- * @param {number[]} xs
- * @returns {number}
- */
-function promedio(xs){
-  if (!Array.isArray(xs) || xs.length === 0) return 0;
-  const total = xs.reduce((a,b) => a+b, 0);
-  return total / xs.length;
-}
-            </code></pre>
-          </div>
-        </article>
 
       </div>
     </section>
-
   </main>
+
+  <div id="sheet" class="sheet" aria-hidden="true">
+    <div class="topic-title" id="topicTitle"></div>
+    <div class="sheet-content" id="sheetContentWrap">
+      <div id="rolesGrid" class="roles-grid" style="display:none;"></div>
+      <div id="sprintGrid" class="sprint-grid" style="display:none;"></div>
+      <img id="sheetImage" src="" alt="Imagen del tema" style="display:none;">
+      <h3 id="sheetTitle" style="display:none;"></h3>
+      <p id="sheetContent" style="display:none;"></p>
+    </div>
+  </div>
 
   <footer class="py-4 border-top bg-white">
     <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
@@ -419,44 +127,48 @@ function promedio(xs){
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Highlight.js -->
-  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/common.min.js"></script>
-  <script>hljs.highlightAll();</script>
 
-  <!-- Utilidades de la página (copiar y probar) -->
   <script>
-    // Botones Copiar
-    document.querySelectorAll('.copy-btn').forEach(btn => {
-      btn.addEventListener('click', async () => {
-        const id = btn.getAttribute('data-copy');
-        const codeEl = document.getElementById(id);
-        if (!codeEl) return;
-        const text = codeEl.innerText;
-        try{
-          await navigator.clipboard.writeText(text.trim());
-          btn.textContent = 'Copiado!';
-          setTimeout(() => btn.textContent = 'Copiar', 1500);
-        }catch(e){ btn.textContent = 'Error'; }
-      });
-    });
+    const colors = ['#ff3b3b','#31a8ff','#00ff88','#ffea00','#ff6ec7','#ff9a3b'];
+    const triangleBg = document.getElementById('triangleBg');
 
-    // Botones Probar: ejecutan el código en la consola y en el DOM demo cuando aplica
-    document.querySelectorAll('[data-run]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const target = btn.getAttribute('data-run');
-        const pre = btn.parentElement?.nextElementSibling?.querySelector('code');
-        if (!pre) return;
-        try{
-          // Evalúa el ejemplo en un ámbito seguro (Function en vez de eval)
-          new Function(pre.textContent)();
-          const info = document.getElementById(target);
-          if (info) info.textContent = 'Código ejecutado. Revisa la consola (F12)';
-        }catch(err){
-          alert('Error al ejecutar el ejemplo: ' + err.message);
-        }
-      });
+    const TRIANGLES = 28;
+    for (let i = 0; i < TRIANGLES; i++) {
+      const t = document.createElement('div');
+      t.className = 'triangle';
+
+      t.style.borderBottomColor = colors[Math.floor(Math.random()*colors.length)];
+
+      const base = Math.floor(30 + Math.random()*90);   
+      const altura = Math.floor(50 + Math.random()*120); 
+      t.style.borderLeftWidth = `${base/2}px`;
+      t.style.borderRightWidth = `${base/2}px`;
+      t.style.borderBottomWidth = `${altura}px`;
+
+      const startX = `${Math.random()*100}vw`;
+      const startY = `${Math.random()*100}vh`;
+      const endX = `${Math.random()*120 - 60}vw`; 
+      const endY = `${Math.random()*120 - 60}vh`; 
+      t.style.setProperty('--start-x', startX);
+      t.style.setProperty('--start-y', startY);
+      t.style.setProperty('--end-x', endX);
+      t.style.setProperty('--end-y', endY);
+
+      const scale = (0.6 + Math.random()*1.2).toFixed(2);
+      t.style.setProperty('--scale', scale);
+      t.style.animationDuration = `${18 + Math.random()*22}s`;
+      t.style.animationDelay = `${-Math.random()*20}s`; 
+
+      triangleBg.appendChild(t);
+    }
+
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+      const linkPage = link.getAttribute("href").split("/").pop();
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      }
     });
   </script>
 </body>

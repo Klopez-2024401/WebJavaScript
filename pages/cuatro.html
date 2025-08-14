@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Variables y Constantes - Enciclopedia JS</title>
+  <link rel="stylesheet" href="../WebJavaScript/style/cuatro.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="triangleBg" class="triangle-bg" aria-hidden="true"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+          <span class="me-2">📚</span>
+          <strong>Enciclopedia JS</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/index.html">Introducción a JavaScript</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/dos.html">Sintaxis básica</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/tres.html">Tipos de datos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/cuatro.html">Variables</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/cinco.html">Operadores</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/seis.html">Condicionales</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/siete.html">Bucles</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/ocho.html">Funciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Variables y <span class="text-primary">Constantes</span> en JavaScript</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+  <section class="py-5">
+    <div class="container">
+
+      <div class="card border-0 shadow-soft mb-5">
+        <div class="card-body p-4 p-lg-5">
+          <h1 class="fw-bold mb-4 text-primary">Variables y Constantes</h1>
+
+          <p>En JavaScript, las <strong>variables</strong> y <strong>constantes</strong> son contenedores donde podemos almacenar información que nuestro programa necesita usar. Estas son fundamentales para manipular datos, realizar cálculos, controlar flujos y mucho más.</p>
+          
+          <p>JavaScript ofrece tres formas principales de declarar valores:</p>
+
+          <ul>
+            <li><strong>var:</strong> permite declarar variables que pueden cambiar de valor y tienen un alcance global o de función.</li>
+            <li><strong>let:</strong> permite declarar variables que pueden cambiar de valor pero con alcance de bloque, evitando errores inesperados.</li>
+            <li><strong>const:</strong> declara constantes cuyo valor no puede cambiar y también tiene alcance de bloque.</li>
+          </ul>
+
+          <p>En esta sección aprenderemos cómo usar cada una, sus diferencias y recomendaciones para trabajar de manera segura y eficiente en nuestros programas.</p>
+
+          <h3 class="fw-bold mb-4 display-5">1. <code class="fw-bold mb-4 display-5">var</code></h3>
+          <p>Declara una variable de manera global o local con función. Puede ser reasignada:</p>
+          <pre><code>var nombre = "Juan";
+nombre = "Pedro";
+console.log(nombre); // Pedro</code></pre>
+
+          <h3 class="fw-bold mb-4 display-5">2. <code class="fw-bold mb-4 display-5">let</code></h3>
+          <p>Declara una variable de alcance de bloque que puede ser reasignada:</p>
+          <pre><code>let edad = 25;
+edad = 26;
+console.log(edad); // 26</code></pre>
+
+          <h3 class="fw-bold mb-4 display-5">3. <code class="fw-bold mb-4 display-5">const</code></h3>
+          <p>Declara una constante de alcance de bloque que no puede ser reasignada:</p>
+          <pre><code>const PI = 3.1416;
+// PI = 3.14; // Esto causaría un error
+console.log(PI); // 3.1416</code></pre>
+
+          <p>En la práctica, se recomienda usar <code>let</code> y <code>const</code> sobre <code>var</code> para aprovechar el alcance de bloque y prevenir errores inesperados.</p>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+  <footer class="py-4 border-top bg-white">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <p class="mb-0">Kevin Ritter Calvin López Aceytuno - 2024401</p>
+      <div class="small">&copy; 2025 Enciclopedia JS – Proyecto PMA</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Triángulos animados
+    const colors = ['#ff3b3b','#31a8ff','#00ff88','#ffea00','#ff6ec7','#ff9a3b'];
+    const triangleBg = document.getElementById('triangleBg');
+    const TRIANGLES = 28;
+    for (let i = 0; i < TRIANGLES; i++) {
+      const t = document.createElement('div');
+      t.className = 'triangle';
+      t.style.borderBottomColor = colors[Math.floor(Math.random()*colors.length)];
+      const base = Math.floor(30 + Math.random()*90);
+      const altura = Math.floor(50 + Math.random()*120);
+      t.style.borderLeftWidth = `${base/2}px`;
+      t.style.borderRightWidth = `${base/2}px`;
+      t.style.borderBottomWidth = `${altura}px`;
+      const startX = `${Math.random()*100}vw`;
+      const startY = `${Math.random()*100}vh`;
+      const endX = `${Math.random()*120 - 60}vw`;
+      const endY = `${Math.random()*120 - 60}vh`;
+      t.style.setProperty('--start-x', startX);
+      t.style.setProperty('--start-y', startY);
+      t.style.setProperty('--end-x', endX);
+      t.style.setProperty('--end-y', endY);
+      const scale = (0.6 + Math.random()*1.2).toFixed(2);
+      t.style.setProperty('--scale', scale);
+      t.style.animationDuration = `${18 + Math.random()*22}s`;
+      t.style.animationDelay = `${-Math.random()*20}s`;
+      triangleBg.appendChild(t);
+    }
+
+    // Resaltar enlace activo
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+      const linkPage = link.getAttribute("href").split("/").pop();
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</body>
+</html>

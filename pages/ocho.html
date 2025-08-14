@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Funciones - Enciclopedia JS</title>
+  <link rel="stylesheet" href="../WebJavaScript/style/ocho.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="triangleBg" class="triangle-bg" aria-hidden="true"></div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+          <span class="me-2">📚</span>
+          <strong>Enciclopedia JS</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/index.html">Introducción a JavaScript</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/dos.html">Sintaxis básica</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/tres.html">Tipos de datos</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/cuatro.html">Variables</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/cinco.html">Operadores</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/seis.html">Condicionales</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/siete.html">Bucles</a></li>
+            <li class="nav-item"><a class="nav-link" href="../WebJavaScript/pages/ocho.html">Funciones</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Funciones en <span class="text-primary">JavaScript</span></h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="py-5">
+      <div class="container">
+
+        <div class="card border-0 shadow-soft mb-5">
+          <div class="card-body p-4 p-lg-5">
+            <h1 class="fw-bold mb-4 text-primary display-5">Tipos de Funciones</h1>
+            <p>Las funciones en JavaScript son bloques de código que realizan una tarea específica y se pueden reutilizar en distintos lugares de un programa. Permiten organizar el código, hacerlo más limpio y evitar repetir instrucciones.</p>
+            <h3 class="fw-bold mb-4 display-5">Función Declarada</h3>
+            <p class="fs-5">Se declara con la palabra <code>function</code> y puede ser llamada antes de su definición.</p>
+            <pre><code>function saludar(nombre){
+  console.log("Hola " + nombre);
+}
+saludar("Kevin");</code></pre>
+
+            <h3 class="fw-bold mb-4 display-5">Función Expresada</h3>
+            <p class="fs-5">Se asigna a una variable y solo se puede usar después de su definición.</p>
+            <pre><code>const despedir = function(nombre){
+  console.log("Adiós " + nombre);
+};
+despedir("Kevin");</code></pre>
+
+            <h3 class="fw-bold mb-4 display-5">Función Flecha</h3>
+            <p class="fs-5">Sintaxis más corta, especialmente útil para funciones anónimas:</p>
+            <pre><code>const sumar = (a, b) => a + b;
+console.log(sumar(3, 5));</code></pre>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 border-top bg-white">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <p class="mb-0">Kevin Ritter Calvin López Aceytuno - 2024401</p>
+      <div class="small">&copy; 2025 Enciclopedia JS – Proyecto PMA</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Triángulos animados
+    const colors = ['#ff3b3b','#31a8ff','#00ff88','#ffea00','#ff6ec7','#ff9a3b'];
+    const triangleBg = document.getElementById('triangleBg');
+    const TRIANGLES = 28;
+    for (let i = 0; i < TRIANGLES; i++) {
+      const t = document.createElement('div');
+      t.className = 'triangle';
+      t.style.borderBottomColor = colors[Math.floor(Math.random()*colors.length)];
+      const base = Math.floor(30 + Math.random()*90);
+      const altura = Math.floor(50 + Math.random()*120);
+      t.style.borderLeftWidth = `${base/2}px`;
+      t.style.borderRightWidth = `${base/2}px`;
+      t.style.borderBottomWidth = `${altura}px`;
+      const startX = `${Math.random()*100}vw`;
+      const startY = `${Math.random()*100}vh`;
+      const endX = `${Math.random()*120 - 60}vw`;
+      const endY = `${Math.random()*120 - 60}vh`;
+      t.style.setProperty('--start-x', startX);
+      t.style.setProperty('--start-y', startY);
+      t.style.setProperty('--end-x', endX);
+      t.style.setProperty('--end-y', endY);
+      const scale = (0.6 + Math.random()*1.2).toFixed(2);
+      t.style.setProperty('--scale', scale);
+      t.style.animationDuration = `${18 + Math.random()*22}s`;
+      t.style.animationDelay = `${-Math.random()*20}s`;
+      triangleBg.appendChild(t);
+    }
+
+    // Resaltar enlace activo
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
+      const linkPage = link.getAttribute("href").split("/").pop();
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</body>
+</html>
