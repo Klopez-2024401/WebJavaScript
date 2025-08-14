@@ -1,0 +1,23 @@
+
+    :root{
+      --primary:#5038b1;
+      --secondary:#00b894;
+      --accent:#ff7675;
+      --ink:#1f2937;
+      --bg:#f7f8fc;
+    }
+    html,body{font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji"; color:var(--ink); background:var(--bg);}
+    .navbar-brand strong{letter-spacing:.3px}
+    .hero{background: linear-gradient(135deg, rgba(80,56,177,.08), rgba(0,184,148,.08));}
+    .shadow-soft{box-shadow: 0 10px 25px rgba(31,41,55,.08)}
+    .card{border:0; border-radius:1.25rem}
+    pre{background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.75rem; overflow:auto}
+    code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}
+    .badge-topic{background: rgba(80,56,177,.12); color: var(--primary);}
+    .toc-link{ text-decoration:none; }
+    .toc-link:hover{ text-decoration:underline; }
+    .copy-btn{ position:absolute; top:.5rem; right:.5rem }
+    .example{position: relative}
+    .callout{border-left:4px solid var(--secondary); background:#ecfdf5; padding:.75rem 1rem; border-radius:.5rem}
+    footer a{color:inherit}
+    .rubrica thead th{background:var(--primary); color:#fff}
